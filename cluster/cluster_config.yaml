@@ -51,6 +51,12 @@ cluster_id_definition: 2
 cluster_threads: 8
 ### # ###
 
+### UCHIME Options ###
+abundance_skew: 16.0
+  # used to distinguish in a three-way alignment which sequence is the chimera and which are the parents
+  # parents are assumed to be more abundant than chimera
+### # ###
+
 ### Size Sort Options ###
 size_sort_minsize: 2
   # minimum abundance for sequence to be evaluated as possibly real
