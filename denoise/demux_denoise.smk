@@ -1,7 +1,7 @@
 # Demultiplexing Snakefile - Denoising
 
 ### Setup ###
-configfile: "config.yaml"
+configfile: "denoise_config.yaml"
 workdir: config["workdir"]
 
 import pandas

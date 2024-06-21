@@ -4,9 +4,9 @@
 mamba_env: "demux" 
   # requires edlib (for minibar) and vsearch
   # mamba create -n demux edlib vsearch
-workdir: "/Users/cweinrich/demux/denoise"
+workdir: "/Users/cweinrich/demux/cluster"
 basecalled_fastq: "basecalled.fastq"
-minibar_barcodes_file: "barcodes.txt"
+minibar_barcodes_file: "b.txt"
 ### # ###
 
 ### General Options ###

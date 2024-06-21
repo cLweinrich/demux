@@ -1,7 +1,7 @@
-# Demultiplexing Snakefile - clustering
+# Demultiplexing Snakefile - Clustering
 
 ### Setup ###
-configfile: "config.yaml"
+configfile: "cluster_config.yaml"
 workdir: config["workdir"]
 
 import pandas
@@ -86,7 +86,7 @@ rule fastq_filter:
         "--fastaout {output} "
         "--fasta_width {params.fasta_width}"
 
-rule cluster:
+rule cluster_or_denoise:
     input:
         "output/3_filter/{sample}.fasta"
     output:
