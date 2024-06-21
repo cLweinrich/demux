@@ -1,0 +1,5 @@
+.snakemake
+output
+demux_denoise.err
+demux.denoise.out
+basecalled.fastq

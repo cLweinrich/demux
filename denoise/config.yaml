@@ -1,0 +1,43 @@
+# Demultiplexing Config - Denoising
+
+# Env/Dir/File Stuff
+mamba_env: "demux" 
+  # requires edlib (for minibar) and vsearch
+  # mamba create -n demux edlib vsearch
+workdir: "/Users/cweinrich/demux/denoise"
+basecalled_fastq: "basecalled.fastq"
+minibar_barcodes_file: "barcodes.txt"
+
+# General Options
+fasta_width: 0 
+  # controls text wrapping in vsearch fastx files (0 = no wrapping)
+
+# minibar Options
+minibar_barcode_e: 2
+  # barcode edit distance
+minibar_primer_E: 1
+  # primer edit distance
+minibar_cols: "1,2,4,3,5"
+  # column order for sample id, fwd barcode, fwd primer, rev barcode, rev primer in barcode file
+
+# FASTQ Filter Options
+q_max: 50
+  # the maximum quality score for the FASTQ file
+  # Nanopore scores go from 0 to 50
+max_expected_error: 10 
+  # the expected error is the sum of error probabilities for all the positions in the sequence
+  # e.g. a 40bp sequence where each position is wrong 50% of the time would have an EE of 20
+min_len: 200
+max_len: 700
+max_ns: 0
+  # maximum number of N's (ambiguous nucleotides)
+
+# Denoise Options
+denoise_alpha: 2  
+  # higher alpha = less false negatives, but more false positives.
+  # 2 is default
+denoise_minsize: 8  # 8 is default
+
+# Size Sort Options
+size_sort_minsize: 2
+  # minimum abundance for sequence to be evaluated as possibly real
