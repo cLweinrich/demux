@@ -1,1 +1,13 @@
 workflow.svg
+denoise/.snakemake
+denoise/output
+denoise/demux_denoise.err
+denoise/demux.denoise.out
+denoise/basecalled.fastq
+denoise/dag.svg
+cluster/.snakemake
+cluster/output
+cluster/demux_cluster.err
+cluster/demux_cluster.out
+cluster/basecalled.fastq
+cluster/dag.svg
