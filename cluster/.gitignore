@@ -1,0 +1,5 @@
+.snakemake
+output
+demux_cluster.err
+demux.cluster.out
+basecalled.fastq

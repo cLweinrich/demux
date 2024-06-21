@@ -1,0 +1,10 @@
+#!/bin/bash
+#$ -q UI
+#$ -pe smp 8
+#$ -N demux_denoise
+#$ -cwd
+#$ -o $JOB_NAME.out
+#$ -e $JOB_NAME.err
+#$ -M cweinrich@uiowa.edu
+#$ -m beas
+mamba run -n snakemake snakemake --snakefile demux_denoise.smk -c 8
