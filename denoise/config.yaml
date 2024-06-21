@@ -1,4 +1,4 @@
-# Demultiplexing Config - Clustering
+# Demultiplexing Config - Denoising
 
 # Env/Dir/File Stuff
 mamba_env: "demux" 
@@ -32,8 +32,11 @@ max_len: 700
 max_ns: 0
   # maximum number of N's (ambiguous nucleotides)
 
-# Cluster Options
-
+# Denoise Options
+denoise_alpha: 2  
+  # higher alpha = less false negatives, but more false positives.
+  # 2 is default
+denoise_minsize: 8  # 8 is default
 
 # Size Sort Options
 size_sort_minsize: 2

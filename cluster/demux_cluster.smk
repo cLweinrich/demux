@@ -93,16 +93,17 @@ rule cluster:
         "output/4_cluster/{sample}.fasta"
     params:
         mamba_env=config["mamba_env"],
-        alpha=config["denoise_alpha"],
-        minsize=config["denoise_minsize"],
+        cluster_id=config["cluster_id"],
+        iddef=config["cluster_id_definition"],
         fasta_width=config["fasta_width"]
     threads:
-        1
+        config["cluster_threads"]
     shell:
         "mamba run -n {params.mamba_env} vsearch " 
-        "--cluster_unoise {input} "
-        "--unoise_alpha {params.alpha} "
-        "--minsize {params.minsize} "
+        "--cluster_size {input} "
+        "--id {params.cluster_id} "
+        "--iddef {params.iddef} "
+        "--threads {threads} "
         "--sizein "
         "--sizeout "
         "--fasta_width {params.fasta_width} "

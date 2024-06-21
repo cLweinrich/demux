@@ -1,5 +1,6 @@
 .snakemake
 output
 demux_cluster.err
-demux.cluster.out
+demux_cluster.out
 basecalled.fastq
+dag.svg
