@@ -25,4 +25,5 @@ Both workflows have the file same requirements:
   5. denoise_config.yaml / cluster_config.yaml
   6. (Optional) .job file for running the workflow on Argon
 
-Neither minibar.py nor the .smk file need to be altered between runs. All configuration options are in the .yaml configuration file.
+Neither minibar.py nor the .smk file need to be altered between runs. 
+All configuration options are in the .yaml configuration file.
