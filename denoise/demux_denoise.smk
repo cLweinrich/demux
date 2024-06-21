@@ -5,7 +5,7 @@ configfile: "denoise_config.yaml"
 workdir: config["workdir"]
 
 import pandas
-samples = [s for s in pandas.read_csv(config["minibar_barcodes_file"], header=None, delimiter="\t").loc[:,0].tolist()]
+samples = pandas.read_csv(config["minibar_barcodes_file"], header=None, delimiter="\t").loc[:,0].tolist()
 #### # ###
 
 ### Output ###
