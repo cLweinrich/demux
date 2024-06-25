@@ -123,7 +123,7 @@ rule uchime3_denovo:
     shell:
         "mamba run -n {params.mamba_env} vsearch " 
         "--uchime3_denovo {input} "
-        "--abskew {params.abskew}"
+        "--abskew {params.abskew} "
         "--sizein "
         "--sizeout "
         "--fasta_width {params.fasta_width} "

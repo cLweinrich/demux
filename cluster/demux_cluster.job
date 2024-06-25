@@ -1,10 +1,10 @@
 #!/bin/bash
 #$ -q UI
-#$ -pe smp 8
+#$ -pe smp 16
 #$ -N demux_cluster
 #$ -cwd
 #$ -o $JOB_NAME.out
 #$ -e $JOB_NAME.err
 #$ -M cweinrich@uiowa.edu
 #$ -m beas
-mamba run -n snakemake snakemake --snakefile demux_cluster.smk -c 8
+mamba run -n snakemake snakemake --snakefile demux_cluster.smk -c 16

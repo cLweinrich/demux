@@ -3,10 +3,9 @@
 ### Env/Dir/File Stuff ###
 mamba_env: "demux" 
   # requires edlib (for minibar) and vsearch
-  # mamba create -n demux edlib vsearch
 workdir: "/Users/cweinrich/demux/cluster"
 basecalled_fastq: "basecalled.fastq"
-minibar_barcodes_file: "b.txt"
+minibar_barcodes_file: "barcodes.txt"
 ### # ###
 
 ### General Options ###
@@ -17,7 +16,7 @@ fasta_width: 0
 ### minibar Options ###
 minibar_barcode_e: 2
   # barcode edit distance
-minibar_primer_E: 1
+minibar_primer_E: 11
   # primer edit distance
 minibar_cols: "1,2,4,3,5"
   # column order for sample id, fwd barcode, fwd primer, rev barcode, rev primer in barcode file
