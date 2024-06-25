@@ -5,9 +5,11 @@ denoise/demux_denoise.err
 denoise/demux.denoise.out
 denoise/basecalled.fastq
 denoise/dag.svg
+denoise/barcodes.txt
 cluster/.snakemake
 cluster/output
 cluster/demux_cluster.err
 cluster/demux_cluster.out
 cluster/basecalled.fastq
+cluster/barcodes.txt
 cluster/dag.svg
