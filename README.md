@@ -10,7 +10,7 @@ After clustering, chimeric reads are removed (vsearch --uchime3_denovo) and the 
 The two versions of the workflow are identical except for the clustering step:
 * The "cluster" version implements a single-pass, greedy centroid-based algorithm (vsearch --cluster_size). This version is more likely to combine similar species/sequences into the same cluster.
 
-* The "denoise" version implements the [UNOISE2](https://drive5.com/usearch/manual/unoise_algo.html) amplicon correction/denoising algorithm. This version is more liekly to split a single species into multiple clusters.
+* The "denoise" version implements the [UNOISE2](https://drive5.com/usearch/manual/unoise_algo.html) amplicon correction/denoising algorithm. This version is more likely to split a single species into multiple clusters.
 
 ## Setup
 ### Dependencies
