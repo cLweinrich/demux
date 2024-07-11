@@ -86,7 +86,7 @@ rule fastq_filter:
         "--fastaout {output} "
         "--fasta_width {params.fasta_width}"
 
-rule cluster_or_denoise:
+rule cluster:
     input:
         "output/3_filter/{sample}.fasta"
     output:
