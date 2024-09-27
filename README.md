@@ -14,7 +14,7 @@ The two versions of the workflow are identical except for the clustering step:
 
 ## Setup
 ### Dependencies
-Both workflows require Snakemake, VSEARCH, and [Edlib](https://github.com/Martinsos/edlib) (required for minibar).
+Both workflows require [Snakemake](https://snakemake.readthedocs.io/en/stable/), [VSEARCH](https://github.com/torognes/vsearch), and [Edlib](https://github.com/Martinsos/edlib) (required for minibar).
 
 My recommendation is to create two separate [Mamba](https://mamba.readthedocs.io/en/latest/index.html) environments, one for Snakemake and one for VSEARCH and Edlib.
 
