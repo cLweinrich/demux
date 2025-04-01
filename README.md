@@ -24,7 +24,7 @@ The Snakemake env will be used to execute the workflow, and the other env will b
 Both workflows have the file same requirements:
   1. .fastq file containing sequences to be demultiplexed and clustered
   2. minibar.py
-  3. Barcode/primer specification file for minibar
+  3. Barcode/primer specification file for minibar \[NOTE: The workflow will break if you have spaces in your sample names.]
   4. demux_denoise.smk / demux_cluster.smk
   5. denoise_config.yaml / cluster_config.yaml
   6. (Optional) .job file for running the workflow on Argon
